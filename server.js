@@ -22,7 +22,7 @@ server.on('listening', () => {
 
 setInterval(() => {
   if (Date.now() - last_message > THRESHOLD) {
-    console.log("Client is dead");
+    console.log("Client is dead ", new Date());
   }
 }, THRESHOLD);
 
